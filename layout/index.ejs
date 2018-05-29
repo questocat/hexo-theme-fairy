@@ -1,0 +1,18 @@
+---
+layout: layout
+---
+<div class="wrapper container main-content-wrapper">
+    <% site.posts.each(function(post){ %>
+        <section class="postPreview">
+        <header>
+            <h1><a href="<%- post.path %>"><%- post.title %></a></h1>
+            <time datetime="<%- date(post.date, 'YYYY-MM-DD') %>" pubdate>
+                <%- date(post.date, 'DD. MMM YYYY') %>
+            </time>
+        </header>
+        <section>
+            <%- post.excerpt %>
+        </section>
+    </section>
+    <% }) %>
+</div>

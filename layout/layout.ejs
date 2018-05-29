@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <!-- head -->
+    <%- partial('_partial/head') %>
+    
+    <body>
+        <header>
+            Blog by <strong>QUESTOCAT</strong>.
+            Find me on <a href="https://github.com/questocat">GitHub</a>,
+            Learn more <a href="/about">about me</a>.
+        </header>
+
+        <!-- content -->
+        <%- body %>
+
+        <!-- js -->
+        <%- js('js/anchor.js') %>
+
+        <script>
+            anchors.add('h2, h3');
+        </script>
+    </body>
+</html>
+

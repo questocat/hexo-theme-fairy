@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+url: http://questocat.com
+SEOTitle: Questocat's Blog
+
+# ---------------------------------------------------------------
+# Analytics settings
+# ---------------------------------------------------------------
+# Google Analytics
+google_analytics: UA-119958045-1    # Format: UA-xxxxxx-xx
+
+# ---------------------------------------------------------------
+# Comment settings
+# ---------------------------------------------------------------
+# Disqus settings
+disqus_shortname: philzc
+
+# #rss: /atom.xml
+
+# date_format: YYYY-MM-DD
+
+# copyright_date: 2018
+
+# paginate: 10
+# paginate_path: "blog/page/:num"
+# permalink: /blog/:year/:month/:day/:title/
