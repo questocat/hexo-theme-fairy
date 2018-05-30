@@ -2,7 +2,7 @@
 layout: layout
 ---
 <div class="wrapper container main-content-wrapper">
-    <% site.posts.each(function(post){ %>
+    <% page.posts.each(function(post) { %>
         <section class="postPreview">
         <header>
             <h1><a href="<%- post.path %>"><%- post.title %></a></h1>
@@ -10,9 +10,14 @@ layout: layout
                 <%- date(post.date, 'DD. MMM YYYY') %>
             </time>
         </header>
-        <section>
-            <%- post.excerpt %>
-        </section>
+        <% if (post.excerpt) { %>
+            <section>
+                <%- post.excerpt %>
+            </section>
+        <% } %>
     </section>
     <% }) %>
+
+    <!-- pagination -->
+    <%- partial('_partial/pagination') %>
 </div>

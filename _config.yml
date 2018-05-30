@@ -2,8 +2,16 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+# URL
 url: http://questocat.com
+root: /
 SEOTitle: Questocat's Blog
+permalink: /blog/:year/:month/:day/:title.html
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 1
+pagination_dir: page
 
 # ---------------------------------------------------------------
 # Analytics settings
@@ -22,7 +30,3 @@ disqus_shortname: philzc
 # date_format: YYYY-MM-DD
 
 # copyright_date: 2018
-
-# paginate: 10
-# paginate_path: "blog/page/:num"
-# permalink: /blog/:year/:month/:day/:title/
