@@ -2,16 +2,17 @@
     <meta charset="UTF-8" />
     <title>
         <% if (page.title) { %>
-            <%= page.title + '｜' + config.SEOTitle %>
+            <%= page.title + '｜' + config.title %>
         <% } else { %>
-            <%= config.SEOTitle %>
+            <%= config.title %>
         <% } %>
     </title>
     <%- css('css/reset.css') %>
     <%- css('css/main.css') %>
     <%- css('css/highlight.css') %>
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-
+    <% if (theme.rss) { %>
+    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
     <!-- analytics -->
     <%- partial('_third-party/analytics/google-analytics') %>
 </head>

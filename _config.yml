@@ -2,11 +2,21 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+# Site
+title: Questocat's Blog
+author: QUESTOCAT
+
 # URL
 url: http://questocat.com
 root: /
 SEOTitle: Questocat's Blog
 permalink: /blog/:year/:month/:day/:title.html
+
+# RSS
+rss: /atom.xml
+
+# Social Links
+GitHub: https://github.com/questocat
 
 # Pagination
 ## Set per_page to 0 to disable pagination
