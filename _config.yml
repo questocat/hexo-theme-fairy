@@ -9,7 +9,6 @@ author: QUESTOCAT
 # URL
 url: http://questocat.com
 root: /
-SEOTitle: Questocat's Blog
 permalink: /blog/:year/:month/:day/:title.html
 
 # RSS
@@ -26,17 +25,13 @@ pagination_dir: page
 # ---------------------------------------------------------------
 # Analytics settings
 # ---------------------------------------------------------------
+analytics: google_analytics
 # Google Analytics
 google_analytics: UA-119958045-1    # Format: UA-xxxxxx-xx
 
 # ---------------------------------------------------------------
 # Comment settings
 # ---------------------------------------------------------------
+comment_provider: disqus
 # Disqus settings
 disqus_shortname: philzc
-
-# #rss: /atom.xml
-
-# date_format: YYYY-MM-DD
-
-# copyright_date: 2018
